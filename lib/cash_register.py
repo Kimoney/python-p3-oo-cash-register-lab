@@ -31,16 +31,3 @@ class CashRegister:
 
     def void_last_transaction(self):
         self.total = self.total - self.last_items_total
-
-
-mine = CashRegister(10)
-print(mine.discount)
-mine.add_item("eggs", 12, 3)
-mine.add_item("milk", 50, 2)
-print(mine.total)
-mine.apply_discount()
-print(mine.discount)
-print(mine.total)
-print(mine.items)
-mine.void_last_transaction()
-print(mine.total)
